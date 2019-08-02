@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index", 
+    "pages/upanddow/upanddow",
+    "pages/test/test",
+    "pages/view/view",
+    "pages/black/black",
+    "pages/form/form",
+    "pages/authorize/authorize",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F5FFFA",
+    "navigationBarTitleText": "Test",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar":{
+    "color":"#F0FFFF",
+    "selectedColor": "#00FFFF",
+    "backgroundColor": "#B0E0E6",
+    "list": [{
+      "pagePath":"pages/test/test",
+      "text":"测试",
+      "iconPath":"pages/images/2.png",
+      "selectedIconPath":"pages/images/2.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "页面",
+      "iconPath": "pages/images/1.png",
+      "selectedIconPath": "pages/images/1.png"
+    },
+    {
+      "pagePath": "pages/form/form",
+      "text": "表单",
+      "iconPath": "pages/images/3.png",
+      "selectedIconPath": "pages/images/3.png"
+    },
+    {
+      "pagePath": "pages/upanddow/upanddow",
+      "text": "上传下载",
+      "iconPath": "pages/images/4.png",
+      "selectedIconPath": "pages/images/4.png"
+    }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

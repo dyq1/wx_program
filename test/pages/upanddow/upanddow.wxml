@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button bindtap="upload"> 上传原图</button>
+    <button bindtap="download"> 下载图片</button>
+  </view>
+  <view class="imginfo">
+  <block wx:for="{{tempFilePaths}}" wx:key="{{index}}">
+            <image src="{{item }}" bindtap="listenerButtonPreviewImage" data-index="{{index}}" style="width: 100%;"/>
+  </block>
+  <block>  <image src='{{downloadPicturePath}}' bindtap='preview_download_picture'></image>
+  </block>
+  </view>
+</view>

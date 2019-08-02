@@ -1,0 +1,19 @@
+<view class="weui-panel">
+    <view class="weui-panel__hd">文章列表</view>
+    <view class="weui-panel__bd" wx:for="{{contents}}" wx:key="item">
+        <view class="weui-media-box weui-media-box_text">
+            <navigator url="/pages/view/view?cid={{item.cid}}" open-type="redirect" hover-class="navigator-hover">
+              <view class="weui-media-box__title weui-media-box__title_in-text">
+                <text decode="{{true}}" space="{{true}}">{{item.title}}</text>
+              </view>
+            </navigator>
+            <view class="weui-media-box__desc"><text decode="{{true}}" space="{{true}}">{{item.title}}。</text></view>
+            <view class="weui-media-box__info">
+                <view class="weui-media-box__info__meta">时间：{{item.created}}</view>
+            </view>
+        </view>
+    </view>
+    <view>
+      
+    </view>
+</view>

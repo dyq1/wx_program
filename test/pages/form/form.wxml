@@ -1,0 +1,16 @@
+<view class="backview">
+  <image class='background-image' src='../images/background.jpg' style="opacity: 0.8;"></image>
+</view>
+<view class="container">
+  <form bindsubmit='formSubmit'>
+    <view class="login">
+      <text>账号：</text><input type="text" name="userName" placeholder="账号" />
+    </view>
+    <view class="login">
+      <text>密码：</text><input type="password" name="userPassword" placeholder="密码" />
+    </view>
+    <view class="log">
+      <button type="primary" form-type="submit">登陆</button>
+    </view>
+  </form>
+</view>
