@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    12121212121212
+  </view>
+  <view class="usermotto">
+    1212121212
+  </view>
+</view>

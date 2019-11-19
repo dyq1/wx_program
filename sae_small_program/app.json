@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pagelist/index",
+    "pages/about/index",
+    "pages/content/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "中国汽车工程学会",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "tabBar": {
+    "color": "#F0FFFF",
+    "selectedColor": "#00FFFF",
+    "backgroundColor": "#B0E0E6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/homepage_close.png",
+        "selectedIconPath": "images/icon/homepage.png"
+      },
+      {
+        "pagePath": "pages/pagelist/index",
+        "text": "资讯",
+        "iconPath": "images/icon/createtask_close.png",
+        "selectedIconPath": "images/icon/createtask.png"
+      },
+      {
+        "pagePath": "pages/about/index",
+        "text": "关于",
+        "iconPath": "images/icon/group_fill_close.png",
+        "selectedIconPath": "images/icon/group_fill.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,59 @@
+<view class='swiperBanner'>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{circular}}'>
+    <swiper-item wx:for="{{imgUrls}}" wx:key='{{index}}'>
+      <navigator url='{{item.link}}'>
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='indexcontainer'>
+  <!-- 第二部分-->
+  <view class='selection'>
+    <!-- 头部文字 -->
+    <view class="header">
+      <text style='margin-left: 5px;'>活动模块</text>
+    </view>
+    <!-- 内容 -->
+    <view class='content'>
+      <view class='content-item' wx:for="{{contentImgUrls}}" wx:key="url" wx:for-item="item">
+        <navigator url='{{item.link}}'>
+          <!-- 图片 -->
+          <view class='list-item-image'>
+          <image src="{{item.url}}" class="slide-image" mode='scaleToFill'></image>
+          </view>
+          <!-- 图片上的文字说明 -->
+          <view class='content-item-title'>
+            <text>{{item.title}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <!-- 第三部分 -->
+  <view class='selection'>
+    <!-- 头部文字 -->
+    <view class="header">
+      <text style='margin-left: 5px;'>新闻资讯</text>
+    </view>
+    <!-- 内容 -->
+    <view class='list-item' wx:for="{{HotImgUrls}}" wx:key="url" wx:for-item="item">
+      <!-- 文章图片 -->
+      <navigator url='{{item.link}}'>
+        <view class='list-item-image'>
+          <image src='{{item.url}}' class="slide-image" mode='scaleToFill'></image>
+        </view>
+        <!-- 文章内容 -->
+        <view class='list-item-text'>
+          <view class='list-item-text-title'>
+            <text>{{item.title}}</text>
+          </view>
+          <view class='list-item-text-context'>
+            <text>{{item.content}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
