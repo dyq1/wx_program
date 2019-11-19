@@ -92,7 +92,7 @@ Page({
       method: 'POST',
       success: function (res) {
         // success
-        //console.log(res.data.result);
+        //console.log(res);
         if (res.data.result == ''){
           self.setData({
             hasMoreData: false

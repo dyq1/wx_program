@@ -1,13 +1,12 @@
 {
   "pages": [
+    "pages/test/test",
     "pages/index/index", 
     "pages/upanddow/upanddow",
-    "pages/test/test",
     "pages/view/view",
     "pages/black/black",
     "pages/form/form",
-    "pages/authorize/authorize",
-    "pages/logs/logs"
+    "pages/authorize/authorize"
   ],
   "window": {
     "backgroundTextStyle": "light",
